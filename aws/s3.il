@@ -6,7 +6,7 @@ import (
    "gitlab.com/donovan4/fufoo/sys/illus/std/text"
 )
 
-// Amazon S3: a bucket (object storage).
+// Amazon S3: a bucket (object storage), for storing objects.
 // Drawn in its own frame, rect(0, 0, size, size), with the label centered below it.
 // The tile color is the `color` field (the official art uses a gradient, here flat).
 module S3(size=20mm, label="S3", color="#1b660f") {
