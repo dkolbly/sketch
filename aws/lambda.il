@@ -6,7 +6,8 @@ import (
    "gitlab.com/donovan4/fufoo/sys/illus/std/text"
 )
 
-// AWS Lambda, drawn in its own frame, rect(0, 0, size, size), with the label centered below it.
+/// AWS Lambda, drawn in its own frame, rect(0, 0, size, size), with the label centered below it.
+/// @component
 module Lambda(size=20mm, label="Lambda", color="#c8511b") {
   k = size/80;
 

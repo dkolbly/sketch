@@ -6,9 +6,10 @@ import (
    "gitlab.com/donovan4/fufoo/sys/illus/std/text"
 )
 
-// Amazon EC2: a chip with its offset copy (virtual servers).
-// Drawn in its own frame, rect(0, 0, size, size), with the label centered below it.
-// The tile color is the `color` field (the official art uses a gradient, here flat).
+/// Amazon EC2: a chip with its offset copy (virtual servers).
+/// Drawn in its own frame, rect(0, 0, size, size), with the label centered below it.
+/// The tile color is the `color` field (the official art uses a gradient, here flat).
+/// @component
 module EC2(size=20mm, label="EC2", color="#c8511b") {
   k = size/80;
 
