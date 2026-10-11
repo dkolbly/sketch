@@ -259,14 +259,30 @@ module Junction(w=10mm, h=10mm, fill="#ccccfb", color="black", width=0.5mm,
 /// @choices startDir auto n e s w
 /// @choices endDir auto n e s w
 /// @choices sloppiness none casual sketch xkcd
+/// @choices strokeStyle solid dashed dotted
 module Flow(points=[path.Point(0mm, 0mm), path.Point(0mm, 15mm)],
             start: types.String = "none", end: types.String = "arrow",
             route: types.String = "elbow",
             startDir: types.String = "auto", endDir: types.String = "auto",
             color="black", width=0.5mm,
-            sloppiness: types.String = "none") {
+            sloppiness: types.String = "none",
+            strokeStyle: types.String = "solid") {
   path.Connector(points, start=start, end=end, route=route,
                  startDir=startDir, endDir=endDir) {
+    FlowPen(color, width, strokeStyle, sloppiness);
+  }
+}
+
+/// The stroke of a Flow (a helper, not a component): solid, or dashed or dotted with the
+/// dashes of the builtin shapes, a fixed length plus the width.
+module FlowPen(color, width, strokeStyle, sloppiness) {
+  if (strokeStyle == "dashed") {
+    path.Stroke(color, width, cap="round", join="round", dash=[2mm, 2mm + width],
+                sloppiness=sloppiness);
+  } else if (strokeStyle == "dotted") {
+    path.Stroke(color, width, cap="round", join="round", dash=[0.4mm, 1.6mm + width],
+                sloppiness=sloppiness);
+  } else {
     path.Stroke(color, width, cap="round", join="round", sloppiness=sloppiness);
   }
 }
