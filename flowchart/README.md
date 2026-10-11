@@ -12,7 +12,7 @@ Package path: `github.com/dkolbly/sketch/flowchart`.
 | `Subprocess` | 40mm x 16mm | `inset=4mm` |
 | `Document` | 40mm x 18mm | |
 | `Junction` | 10mm x 10mm | `label="A"` |
-| `Flow` | connector | `start`, `end="arrow"`, `route="elbow"`, `startDir`, `endDir` |
+| `Flow` | connector | `start`, `end="arrow"`, `route="elbow"`, `startDir`, `endDir`, `strokeStyle` (`solid`, `dashed`, `dotted`) |
 
 Symbols are resizable (`w`, `h`) and share the builtin `shapes.Rect` fields:
 `fill`, `color`, `width`, `label`, `font`, `fontSize`, `fillStyle`,
