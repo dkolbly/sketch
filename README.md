@@ -7,8 +7,8 @@ fields, with defaults, that the editor lets you change.
 The repository is one library module, `github.com/dkolbly/sketch` (see
 `fu.meta.yaml`), and each directory is a package of it:
 
-| package | contents |
-|---|---|
+| package       | contents                                                            |
+|---------------|---------------------------------------------------------------------|
 | [`aws`](aws/) | AWS architecture icons: EC2, Lambda, DynamoDB, ElastiCache, RDS, S3 |
 
 A component is addressed as `<package path>.<Name>`, e.g.
