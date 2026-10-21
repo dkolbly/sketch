@@ -13,6 +13,6 @@ module TaggedS3(size=20mm, label="S3", note="!") {
   S3(size=size, label=label);
   b = size/3;
   path.Translate(size - b - base.Inset(size), base.Inset(size)) {
-    base.Badge(size=b, label=note, tint="#ff9900");
+    base.Badge(size=b, label=note, fill="#ff9900");
   }
 }
