@@ -1,0 +1,1150 @@
+{
+  "meta":  {
+    "title":  "sticky-figures",
+    "created":  "2026-10-30T00:45:43.864858053Z",
+    "updated":  "2026-10-30T22:10:43.255641762Z"
+  },
+  "root":  {
+    "group":  {
+      "members":  [
+        {
+          "id":  "1",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigure",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "pose",
+                "str":  "stand"
+              },
+              {
+                "name":  "hat",
+                "str":  "cowboy"
+              },
+              {
+                "name":  "hatColor",
+                "color":  {
+                  "argb":  "4290007817"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  41.2,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  11.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "16087657941364682737"
+          }
+        },
+        {
+          "id":  "2",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigure",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "pose",
+                "str":  "stand"
+              },
+              {
+                "name":  "hat",
+                "str":  "baseball"
+              },
+              {
+                "name":  "hatColor",
+                "color":  {
+                  "argb":  "4292672743"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  62.8,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  11.200001,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "13903353597343725160"
+          }
+        },
+        {
+          "id":  "3",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigure",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "pose",
+                "str":  "stand"
+              },
+              {
+                "name":  "hat",
+                "str":  "wizard"
+              },
+              {
+                "name":  "hatColor",
+                "color":  {
+                  "argb":  "4291081725"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  82.8,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  11.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "14962864863254106527"
+          }
+        },
+        {
+          "id":  "4",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigure",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "pose",
+                "str":  "stand"
+              },
+              {
+                "name":  "hat",
+                "str":  "beret"
+              },
+              {
+                "name":  "hatColor",
+                "color":  {
+                  "argb":  "4286083436"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  103,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  11.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "5434514241544211298"
+          }
+        },
+        {
+          "id":  "9",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigure",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "pose",
+                "str":  "stand"
+              },
+              {
+                "name":  "hat",
+                "str":  "none"
+              },
+              {
+                "name":  "hatColor",
+                "color":  {
+                  "argb":  "4290007817"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  23.6,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  11.200001,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "9354729890525882170"
+          }
+        },
+        {
+          "id":  "10",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigurePonytail",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  8.8,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  67.499996,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "10981084554718185286"
+          }
+        },
+        {
+          "id":  "11",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigurePonytail",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  29.8,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  67.500002,
+                    "units":  "mm"
+                  }
+                }
+              },
+              {
+                "name":  "pose",
+                "str":  "wave"
+              }
+            ],
+            "sloppySeed":  "13609880401494541393"
+          }
+        },
+        {
+          "id":  "12",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigurePonytail",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  48.2,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  67.500003,
+                    "units":  "mm"
+                  }
+                }
+              },
+              {
+                "name":  "pose",
+                "str":  "cheer"
+              }
+            ],
+            "sloppySeed":  "8506024700304744492"
+          }
+        },
+        {
+          "id":  "13",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigurePonytail",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  70.2,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  67.499999,
+                    "units":  "mm"
+                  }
+                }
+              },
+              {
+                "name":  "pose",
+                "str":  "point"
+              }
+            ],
+            "sloppySeed":  "14662515593828821472"
+          }
+        },
+        {
+          "id":  "14",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigurePonytail",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  91.4,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  67.5,
+                    "units":  "mm"
+                  }
+                }
+              },
+              {
+                "name":  "pose",
+                "str":  "shrug"
+              }
+            ],
+            "sloppySeed":  "2561317755770729193"
+          }
+        },
+        {
+          "id":  "15",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "StickFigurePonytail",
+            "fields":  [
+              {
+                "name":  "sloppiness",
+                "str":  "casual"
+              },
+              {
+                "name":  "pose",
+                "str":  "think"
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  109.8,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  67.499993,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "11582367232264690829"
+          }
+        },
+        {
+          "id":  "16",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  18.6,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  44.2,
+                    "units":  "mm"
+                  }
+                }
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "no hat"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              }
+            ],
+            "sloppySeed":  "9135887833020265578"
+          }
+        },
+        {
+          "id":  "17",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "cowboy"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  38.6,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  44.199998,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "9673251202077066211"
+          }
+        },
+        {
+          "id":  "18",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "baseball"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  59.4,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  44.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "8686166049556641424"
+          }
+        },
+        {
+          "id":  "19",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "wizard"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  79,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  44.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "2720709753260357807"
+          }
+        },
+        {
+          "id":  "20",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "beret"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  100.2,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  44.199998,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "16570986202219170272"
+          }
+        },
+        {
+          "id":  "21",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Text",
+            "fields":  [
+              {
+                "name":  "text",
+                "str":  "Hats"
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  2.4,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  -1.6,
+                    "units":  "mm"
+                  }
+                }
+              },
+              {
+                "name":  "fontSize",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              }
+            ],
+            "sloppySeed":  "7052431763853686136"
+          }
+        },
+        {
+          "id":  "22",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Text",
+            "fields":  [
+              {
+                "name":  "text",
+                "str":  "Poses"
+              },
+              {
+                "name":  "fontSize",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  -0,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  57,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "16000519126128405727"
+          }
+        },
+        {
+          "id":  "23",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "none"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  5.8,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  102.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "7337824430714980988"
+          }
+        },
+        {
+          "id":  "24",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "wave"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  25.8,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  102.199998,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "1655668692145447455"
+          }
+        },
+        {
+          "id":  "25",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "cheer"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  46.6,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  102.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "13239548516627770647"
+          }
+        },
+        {
+          "id":  "26",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "point"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  66.2,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  102.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "18031304104921718121"
+          }
+        },
+        {
+          "id":  "27",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "shrug"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  87.4,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  102.199998,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "4560861970681568222"
+          }
+        },
+        {
+          "id":  "28",
+          "component":  {
+            "pkg":  "shapes",
+            "name":  "Rect",
+            "fields":  [
+              {
+                "name":  "font",
+                "str":  "CMU Typewriter Text"
+              },
+              {
+                "name":  "fontWeight",
+                "flt":  700
+              },
+              {
+                "name":  "w",
+                "scalar":  {
+                  "value":  17.4,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "h",
+                "scalar":  {
+                  "value":  7,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "label",
+                "str":  "think"
+              },
+              {
+                "name":  "fill",
+                "color":  {
+                  "argb":  "4293387748"
+                }
+              },
+              {
+                "name":  "radius",
+                "scalar":  {
+                  "value":  1,
+                  "units":  "mm"
+                }
+              },
+              {
+                "name":  "@at",
+                "position":  {
+                  "x":  {
+                    "value":  108.8,
+                    "units":  "mm"
+                  },
+                  "y":  {
+                    "value":  102.2,
+                    "units":  "mm"
+                  }
+                }
+              }
+            ],
+            "sloppySeed":  "3541680946834709178"
+          }
+        }
+      ]
+    }
+  }
+}

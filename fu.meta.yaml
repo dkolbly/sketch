@@ -1,4 +1,3 @@
 module: github.com/dkolbly/sketch
-version: 0.5.1
-requires: [github.com/dkolbly/illus-test@v0.3.0]
+version: 0.5.2
 listed: true
