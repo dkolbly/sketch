@@ -208,7 +208,7 @@ module Document(w=40mm, h=18mm, fill="#ccccfb", color="black", width=0.5mm,
     path.CurveTo(0.25*w, 1.05*h, 0.25*w, 1.05*h, 0, 0.85*h);
     path.Close();
   }
-  shapes.Label(label, 0mm, w, 0mm, h, font, fontSize, color, valign=valign);
+  shapes.Label(label, 0mm, w, 0mm, 0.85*h, font, fontSize, color, valign=valign);
   path.ConnectionSurface() {
     path.MoveTo(0, 0);
     path.LineTo(w, 0);
@@ -261,7 +261,6 @@ module Junction(w=10mm, h=10mm, fill="#ccccfb", color="black", width=0.5mm,
 /// @choices startDir auto n e s w
 /// @choices endDir auto n e s w
 /// @choices sloppiness none casual sketch xkcd
-/// @choices valign top middle bottom
 /// @choices strokeStyle solid dashed dotted
 module Flow(points=[path.Point(0mm, 0mm), path.Point(0mm, 15mm)],
             start: types.String = "none", end: types.String = "arrow",
