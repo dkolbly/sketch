@@ -79,7 +79,7 @@ example already uses it without explanation).
 
 ### 2.5 Helper modules inside a library
 Not stated whether a library may define untagged helper modules and call them
-from components. It works (`Caption`, `Anchors` in flowchart did not appear in
+from components. It works (`Anchors` in flowchart did not appear in
 `components list`) and the page says "Use untagged modules for helpers", but it
 should say helpers may be shared across files in a package and may take
 positional arguments with no defaults.

@@ -1,22 +1,10 @@
 package flowchart;
 
 import (
+   "shapes"
    "gitlab.com/donovan4/fufoo/sys/illus/std/path"
-   fonts "gitlab.com/donovan4/fufoo/sys/illus/std/font"
-   "gitlab.com/donovan4/fufoo/sys/illus/std/text"
    "gitlab.com/donovan4/fufoo/sys/fu/std/types"
 )
-
-/// The centered label shared by the flowchart symbols (a helper, not a component).
-module Caption(w, h, label, font, fontSize, color) {
-  path.Translate(w/2, h/2 - 0.6*fontSize) {
-    text.Typeset(label, align="center") {
-      fonts.Family(font);
-      fonts.Size(fontSize);
-      path.Fill(color);
-    }
-  }
-}
 
 /// The n/e/s/w anchors at the side midpoints of the w by h frame (a helper).
 module Anchors(w, h) {
@@ -31,8 +19,10 @@ module Anchors(w, h) {
 /// @font font
 /// @choices fillStyle solid hachure crosshatch
 /// @choices sloppiness none casual sketch xkcd
+/// @choices valign top middle bottom
 module Process(w=40mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm,
             label="", font="CMU Serif", fontSize=3.5mm,
+            valign: types.String = "middle",
             fillStyle: types.String = "solid",
             sloppiness: types.String = "none") {
   path.Path() {
@@ -44,7 +34,7 @@ module Process(w=40mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm,
     path.LineTo(0, h);
     path.Close();
   }
-  Caption(w, h, label, font, fontSize, color);
+  shapes.Label(label, 0mm, w, 0mm, h, font, fontSize, color, valign=valign);
   path.ConnectionSurface() {
     path.MoveTo(0, 0);
     path.LineTo(w, 0);
@@ -60,8 +50,10 @@ module Process(w=40mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm,
 /// @font font
 /// @choices fillStyle solid hachure crosshatch
 /// @choices sloppiness none casual sketch xkcd
+/// @choices valign top middle bottom
 module Decision(w=40mm, h=24mm, fill="#ccccfb", color="black", width=0.5mm,
             label="", font="CMU Serif", fontSize=3.5mm,
+            valign: types.String = "middle",
             fillStyle: types.String = "solid",
             sloppiness: types.String = "none") {
   path.Path() {
@@ -73,7 +65,7 @@ module Decision(w=40mm, h=24mm, fill="#ccccfb", color="black", width=0.5mm,
     path.LineTo(0, h/2);
     path.Close();
   }
-  Caption(w, h, label, font, fontSize, color);
+  shapes.Label(label, 0mm, w, 0mm, h, font, fontSize, color, valign=valign);
   path.ConnectionSurface() {
     path.MoveTo(w/2, 0);
     path.LineTo(w, h/2);
@@ -89,8 +81,10 @@ module Decision(w=40mm, h=24mm, fill="#ccccfb", color="black", width=0.5mm,
 /// @font font
 /// @choices fillStyle solid hachure crosshatch
 /// @choices sloppiness none casual sketch xkcd
+/// @choices valign top middle bottom
 module Terminator(w=40mm, h=14mm, fill="#ccccfb", color="black", width=0.5mm,
             label="", font="CMU Serif", fontSize=3.5mm,
+            valign: types.String = "middle",
             fillStyle: types.String = "solid",
             sloppiness: types.String = "none") {
   path.Path() {
@@ -105,7 +99,7 @@ module Terminator(w=40mm, h=14mm, fill="#ccccfb", color="black", width=0.5mm,
     path.CurveTo(0, h/2 - 0.5523*h/2, h/2 - 0.5523*h/2, 0, h/2, 0);
     path.Close();
   }
-  Caption(w, h, label, font, fontSize, color);
+  shapes.Label(label, 0mm, w, 0mm, h, font, fontSize, color, valign=valign);
   path.ConnectionSurface() {
     path.MoveTo(h/2, 0);
     path.LineTo(w - h/2, 0);
@@ -124,8 +118,10 @@ module Terminator(w=40mm, h=14mm, fill="#ccccfb", color="black", width=0.5mm,
 /// @font font
 /// @choices fillStyle solid hachure crosshatch
 /// @choices sloppiness none casual sketch xkcd
+/// @choices valign top middle bottom
 module InputOutput(w=44mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm, skew=6mm,
             label="", font="CMU Serif", fontSize=3.5mm,
+            valign: types.String = "middle",
             fillStyle: types.String = "solid",
             sloppiness: types.String = "none") {
   path.Path() {
@@ -137,7 +133,7 @@ module InputOutput(w=44mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm, s
     path.LineTo(0, h);
     path.Close();
   }
-  Caption(w, h, label, font, fontSize, color);
+  shapes.Label(label, 0mm, w, 0mm, h, font, fontSize, color, valign=valign);
   path.ConnectionSurface() {
     path.MoveTo(skew, 0);
     path.LineTo(w, 0);
@@ -160,8 +156,10 @@ module InputOutput(w=44mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm, s
 /// @font font
 /// @choices fillStyle solid hachure crosshatch
 /// @choices sloppiness none casual sketch xkcd
+/// @choices valign top middle bottom
 module Subprocess(w=40mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm, inset=4mm,
             label="", font="CMU Serif", fontSize=3.5mm,
+            valign: types.String = "middle",
             fillStyle: types.String = "solid",
             sloppiness: types.String = "none") {
   path.Path() {
@@ -178,7 +176,7 @@ module Subprocess(w=40mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm, in
     path.MoveTo(inset, 0); path.LineTo(inset, h);
     path.MoveTo(w - inset, 0); path.LineTo(w - inset, h);
   }
-  Caption(w, h, label, font, fontSize, color);
+  shapes.Label(label, 0mm, w, 0mm, h, font, fontSize, color, valign=valign);
   path.ConnectionSurface() {
     path.MoveTo(0, 0);
     path.LineTo(w, 0);
@@ -194,8 +192,10 @@ module Subprocess(w=40mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm, in
 /// @font font
 /// @choices fillStyle solid hachure crosshatch
 /// @choices sloppiness none casual sketch xkcd
+/// @choices valign top middle bottom
 module Document(w=40mm, h=18mm, fill="#ccccfb", color="black", width=0.5mm,
             label="", font="CMU Serif", fontSize=3.5mm,
+            valign: types.String = "middle",
             fillStyle: types.String = "solid",
             sloppiness: types.String = "none") {
   path.Path() {
@@ -208,7 +208,7 @@ module Document(w=40mm, h=18mm, fill="#ccccfb", color="black", width=0.5mm,
     path.CurveTo(0.25*w, 1.05*h, 0.25*w, 1.05*h, 0, 0.85*h);
     path.Close();
   }
-  Caption(w, h, label, font, fontSize, color);
+  shapes.Label(label, 0mm, w, 0mm, h, font, fontSize, color, valign=valign);
   path.ConnectionSurface() {
     path.MoveTo(0, 0);
     path.LineTo(w, 0);
@@ -225,8 +225,10 @@ module Document(w=40mm, h=18mm, fill="#ccccfb", color="black", width=0.5mm,
 /// @font font
 /// @choices fillStyle solid hachure crosshatch
 /// @choices sloppiness none casual sketch xkcd
+/// @choices valign top middle bottom
 module Junction(w=10mm, h=10mm, fill="#ccccfb", color="black", width=0.5mm,
             label="A", font="CMU Serif", fontSize=3.5mm,
+            valign: types.String = "middle",
             fillStyle: types.String = "solid",
             sloppiness: types.String = "none") {
   path.Path() {
@@ -239,7 +241,7 @@ module Junction(w=10mm, h=10mm, fill="#ccccfb", color="black", width=0.5mm,
     path.CurveTo(0, h/2 - 0.5523*h/2, w/2 - 0.5523*w/2, 0, w/2, 0);
     path.Close();
   }
-  Caption(w, h, label, font, fontSize, color);
+  shapes.Label(label, 0mm, w, 0mm, h, font, fontSize, color, valign=valign);
   path.ConnectionSurface() {
     path.MoveTo(w/2, 0);
     path.CurveTo(w/2 + 0.5523*w/2, 0, w, h/2 - 0.5523*h/2, w, h/2);
@@ -259,6 +261,7 @@ module Junction(w=10mm, h=10mm, fill="#ccccfb", color="black", width=0.5mm,
 /// @choices startDir auto n e s w
 /// @choices endDir auto n e s w
 /// @choices sloppiness none casual sketch xkcd
+/// @choices valign top middle bottom
 /// @choices strokeStyle solid dashed dotted
 module Flow(points=[path.Point(0mm, 0mm), path.Point(0mm, 15mm)],
             start: types.String = "none", end: types.String = "arrow",
