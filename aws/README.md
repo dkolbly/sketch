@@ -7,9 +7,11 @@ Package path: `github.com/dkolbly/sketch/aws`.
 |---------------|-----------------------------------------------|
 | `EC2`         | `size=20mm`, `label="EC2"`, `color="#c8511b"` |
 | `Lambda`      | `size`, `label`, `color="#c8511b"`            |
+| `EKS`         | `size`, `label`, `color="#c8511b"`            |
 | `DynamoDB`    | `size`, `label`, `color="#2e27ad"`            |
 | `ElastiCache` | `size`, `label`, `color="#2e27ad"`            |
 | `RDS`         | `size`, `label`, `color="#2e27ad"`            |
+| `MSK`         | `size`, `label`, `color="#4d27a8"`            |
 | `S3`          | `size`, `label`, `color="#1b660f"`            |
 
 Each icon is a square tile, `rect(0, 0, size, size)`, with the label centered
