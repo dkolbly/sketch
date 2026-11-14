@@ -14,7 +14,8 @@ import (
 /// a triangle head by default.  radius rounds the bends of the centerline
 /// (so the inner edge of a bend has radius - thickness/2 and the outer one
 /// radius + thickness/2).  headWidth and headLength are multiples of the
-/// thickness.  The label is drawn at the middle of the line, along it.
+/// thickness.  The label is centered on the visible shaft (the line without its heads),
+/// along it, in the font color (default: the stroke color).
 /// @component
 /// @choices start none triangle round sharp indent
 /// @choices end none triangle round sharp indent
@@ -22,6 +23,7 @@ import (
 /// @basic start
 /// @basic end
 /// @basic label
+/// @basic font.color
 /// @basic thickness
 /// @basic radius
 /// @basic sloppiness
@@ -47,6 +49,7 @@ module Arrow(points=[path.Point(0mm, 0mm), path.Point(40mm, 0mm)],
 /// @basic start
 /// @basic end
 /// @basic label
+/// @basic font.color
 /// @basic thickness
 /// @basic radius
 /// @basic sloppiness

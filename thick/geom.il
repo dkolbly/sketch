@@ -4,6 +4,7 @@ import (
    "gitlab.com/donovan4/fufoo/sys/illus/std/path"
    "gitlab.com/donovan4/fufoo/sys/fu/std/math"
    "gitlab.com/donovan4/fufoo/sys/fu/std/lang"
+   "gitlab.com/donovan4/fufoo/sys/fu/std/array"
    "gitlab.com/donovan4/fufoo/sys/illus/std/style"
    "shapes/v2"
 )
@@ -171,12 +172,18 @@ module Band(pts, label, start, end, thickness, radius, headWidth, headLength,
   }
 
   if (label != "") {
-    half = lengthFrom(pts, 0, n) / 2;
-    i = segAt(pts, 0, half, n);
-    d = remAt(pts, i, half, n);
-    a = upright(math.Atan(py(pts[i+1]) - py(pts[i]), px(pts[i+1]) - px(pts[i])));
-    mx = px(pts[i]) + ux(pts[i], pts[i+1])*d;
-    my = py(pts[i]) + uy(pts[i], pts[i+1])*d;
+    // walk the midpoint along the visible shaft: the line with both ends
+    // pulled in by the head cutbacks
+    lp = array.Join([path.Point((px(p0) - sux*cs)*1mm, (py(p0) - suy*cs)*1mm)],
+                    array.Remove(pts, 0, n-1),
+                    [path.Point((px(pe) - eux*ce)*1mm, (py(pe) - euy*ce)*1mm)]);
+    ln = lang.Length(lp);
+    half = lengthFrom(lp, 0, ln) / 2;
+    i = segAt(lp, 0, half, ln);
+    d = remAt(lp, 0, half, ln);
+    a = upright(math.Atan(py(lp[i+1]) - py(lp[i]), px(lp[i+1]) - px(lp[i])));
+    mx = px(lp[i]) + ux(lp[i], lp[i+1])*d;
+    my = py(lp[i]) + uy(lp[i], lp[i+1])*d;
     path.Translate(mx*1mm, my*1mm) {
       path.Rotate(a) {
         v2.Label(label, 0mm, 0mm, 0mm, 0mm, font, stroke, para);

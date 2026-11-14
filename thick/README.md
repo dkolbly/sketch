@@ -21,7 +21,7 @@ so the editor draws them click, bend, click.
 | field | default | meaning |
 |---|---|---|
 | `points` | (0,0) (40,0) mm | the centerline |
-| `label` | `""` | drawn at the midpoint (by length), along the line, never upside down |
+| `label` | `""` | centered on the visible shaft (the line minus its end heads), along it, never upside down |
 | `start`, `end` | see above | end shape: `none`, `triangle`, `round`, `sharp`, `indent` |
 | `thickness` | 6mm | band width |
 | `radius` | 4mm | bend radius of the *centerline*: the inner edge of a bend has `radius - thickness/2` (a sharp corner if that is negative), the outer `radius + thickness/2` |
@@ -30,7 +30,7 @@ so the editor draws them click, bend, click.
 | `stroke` | black, 0.5mm, solid | outline (`style.Stroke`) |
 | `fill` | white, solid | band fill (`style.Fill`) |
 | `sloppiness` | `none` | `none`, `casual`, `sketch`, `xkcd` |
-| `font` | CMU Serif 3.5mm | label font (`style.Font`) |
+| `font` | CMU Serif 3.5mm | label font (`style.Font`); `font.color` is the label color, defaulting to the stroke color |
 
 ## End styles
 
