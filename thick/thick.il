@@ -23,7 +23,6 @@ import (
 /// @basic start
 /// @basic end
 /// @basic label
-/// @basic font.color
 /// @basic thickness
 /// @basic radius
 /// @basic sloppiness
@@ -49,7 +48,6 @@ module Arrow(points=[path.Point(0mm, 0mm), path.Point(40mm, 0mm)],
 /// @basic start
 /// @basic end
 /// @basic label
-/// @basic font.color
 /// @basic thickness
 /// @basic radius
 /// @basic sloppiness
