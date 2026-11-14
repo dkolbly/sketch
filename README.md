@@ -12,6 +12,7 @@ The repository is one library module, `github.com/dkolbly/sketch` (see
 | [`aws`](aws/) | AWS architecture icons: EC2, Lambda, DynamoDB, ElastiCache, RDS, S3 |
 | [`flowchart`](flowchart/) | flowchart symbols (Process, Decision, Terminator, ...) and a Flow connector |
 | [`thick`](thick/) | thick lines and block arrows with shaped ends, rounded bends and a label along the line |
+| [`notes`](notes/) | a sticky note with a lifted corner and a page with a folded corner |
 
 A component is addressed as `<package path>.<Name>`, e.g.
 `github.com/dkolbly/sketch/aws.S3`.
