@@ -40,6 +40,8 @@ so the editor draws them click, bend, click.
 - `sharp`: a head whose barbs sweep back past the point where the head meets the body.
 - `indent`: a V-notch swallowtail, open at the end point.
 
+The inspector shows each end style as a small picture (`EndMark`, wired to the `start` and `end` choices with `@marks`).
+
 A head is shortened (keeping its proportions) when the end segment is too short,
 so each end takes at most 45% of its segment. The label is only drawn when
 non-empty.

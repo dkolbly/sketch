@@ -19,6 +19,8 @@ import (
 /// @component
 /// @choices start none triangle round sharp indent
 /// @choices end none triangle round sharp indent
+/// @marks start EndMark
+/// @marks end EndMark
 /// @choices sloppiness none casual sketch xkcd
 /// @basic start
 /// @basic end
@@ -40,27 +42,21 @@ module Arrow(points=[path.Point(0mm, 0mm), path.Point(40mm, 0mm)],
        stroke, fill, sloppiness, font, style.Paragraph(align="center", valign="middle"));
 }
 
-/// a thick line: like Arrow, but with plain ends by default.
-/// @component
-/// @choices start none triangle round sharp indent
-/// @choices end none triangle round sharp indent
-/// @choices sloppiness none casual sketch xkcd
-/// @basic start
-/// @basic end
-/// @basic label
-/// @basic thickness
-/// @basic radius
-/// @basic sloppiness
-module Line(points=[path.Point(0mm, 0mm), path.Point(40mm, 0mm)],
-            label="",
-            start: types.String = "none", end: types.String = "none",
-            thickness=6mm, radius=4mm,
-            headWidth=2.2, headLength=1.4,
-            stroke: style.Stroke = style.Stroke(color="black", width=0.5mm, style="solid"),
-            fill: style.Fill = style.Fill(color="white", style="solid"),
-            sloppiness: types.String = "none",
-            font: style.Font = style.Font(family="CMU Serif", size=3.5mm, weight=400,
-                                          style="normal", line_spacing=1.2, letter_spacing=0)) {
-  Band(points, label, start, end, thickness, radius, headWidth, headLength,
-       stroke, fill, sloppiness, font, style.Paragraph(align="center", valign="middle"));
+/// the inspector picture for an end style: a short band with the style at the
+/// right end (field "end") or at the left end (field "start"), the other end flat.
+module EndMark(value, field="end") {
+  if (field == "start") {
+    EndBand([path.Point(12mm, 0mm), path.Point(0mm, 0mm)], "none", value);
+  } else {
+    EndBand([path.Point(0mm, 0mm), path.Point(12mm, 0mm)], "none", value);
+  }
+}
+
+module EndBand(pts, s, e) {
+  Band(pts, "", s, e, 3mm, 0mm, 2.2, 1.4,
+       style.Stroke(color="black", width=0.4mm, style="solid"),
+       style.Fill(color="white", style="solid"), "none",
+       style.Font(family="CMU Serif", size=3.5mm, weight=400, style="normal",
+                  line_spacing=1.2, letter_spacing=0),
+       style.Paragraph(align="center", valign="middle"));
 }
