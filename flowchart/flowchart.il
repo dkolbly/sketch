@@ -184,6 +184,17 @@ module Subprocess(w=40mm, h=16mm, fill="#ccccfb", color="black", width=0.5mm, in
     path.LineTo(0, h);
     path.Close();
   }
+  // what a client strokes before the drawing arrives: the frame and
+  // both side bars
+  path.Skeleton() {
+    path.MoveTo(0, 0);
+    path.LineTo(w, 0);
+    path.LineTo(w, h);
+    path.LineTo(0, h);
+    path.Close();
+    path.MoveTo(inset, 0); path.LineTo(inset, h);
+    path.MoveTo(w - inset, 0); path.LineTo(w - inset, h);
+  }
   Anchors(w, h);
 }
 
