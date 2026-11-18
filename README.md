@@ -14,6 +14,7 @@ The repository is one library module, `github.com/dkolbly/sketch` (see
 | [`thick`](thick/) | thick lines and block arrows with shaped ends, rounded bends and a label along the line |
 | [`notes`](notes/) | a sticky note with a lifted corner and a page with a folded corner |
 | [`stamps`](stamps/) | big marks to put on top of an illustration: a glossy checkmark and cross |
+| [`fufoo`](fufoo/) | fu and foo application design: runtime, libraries, programs, blobs, messages, observables and domains |
 
 A component is addressed as `<package path>.<Name>`, e.g.
 `github.com/dkolbly/sketch/aws.S3`.
