@@ -1,4 +1,5 @@
-/// Paper notes: a sticky note with a lifted corner and a page with a folded one.
+/// Paper notes: a sticky note with a lifted corner, a page with a folded one,
+/// and circled numbers for annotating a drawing.
 /// @title Notes
 package notes;
 
@@ -138,6 +139,42 @@ module Page(w=30mm, h=40mm, label="", corner: types.String = "bottom-right", fol
     path.Close();
   }
   Anchors(w, h);
+}
+
+/// A circled number for annotating a drawing, like the Unicode white and
+/// black circled digits: a ring around the label, or with `reversed` a
+/// solid disc in `color` with the label knocked out in white.  `color` is
+/// the ring (or disc) and, unreversed, the label.
+/// @component
+/// @frame 1 1
+/// @choices sloppiness none casual sketch xkcd
+/// @basic label
+/// @basic color
+/// @basic reversed
+/// @font family
+module Number(size=8mm, label="1", color="black", reversed=false,
+             width=0.5mm, family="Go", weight=700, textScale=0.62,
+             sloppiness: types.String = "none") {
+  r = size / 2;
+  ink = reversed ? "white" : color;
+  ring = style.Stroke(color=color, width=width, style="solid");
+  // inset by half the stroke so the ring stays inside the frame
+  path.Ellipse(r, r, r=r - width/2) {
+    style.Pen(ring, sloppiness);
+    path.Fill(reversed ? color : "white");
+  }
+  // the text scales with the circle
+  font = style.Font(family=family, size=size * textScale, weight=weight,
+                    style="normal", line_spacing=1.0, letter_spacing=0);
+  para = style.Paragraph(align="center", valign="middle");
+  v2.Label(label, 0mm, size, 0mm, size, font, style.Stroke(color=ink, width=width, style="solid"), para);
+  path.ConnectionSurface() {
+    path.MoveTo(0, r);
+    path.ArcTo(size, r, radius=r);
+    path.ArcTo(0, r, radius=r);
+    path.Close();
+  }
+  Anchors(size, size);
 }
 
 function fmin(a, b) = a < b ? a : b;
