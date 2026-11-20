@@ -16,6 +16,7 @@ The repository is one library module, `github.com/dkolbly/sketch` (see
 | [`stamps`](stamps/) | big marks to put on top of an illustration: a glossy checkmark and cross |
 | [`fufoo`](fufoo/) | fu and foo application design: runtime, libraries, programs, blobs, messages, observables and domains |
 | [`products`](products/) | product logos: Redis |
+| [`icons`](icons/) | small glyph-like icons: Key |
 
 A component is addressed as `<package path>.<Name>`, e.g.
 `github.com/dkolbly/sketch/aws.S3`.
