@@ -115,5 +115,9 @@ module Message(w=50mm, label="Message", text="id int64 PK\nname string",
     path.MoveTo(0, headH);
     path.LineTo(w, headH);
   }
-  Anchors(w, h);
+  // n/s at the box's top and bottom; e/w in the header band, not mid-box
+  path.ConnectionPoint(w/2, 0, name="n", normal=[0, -1]);
+  path.ConnectionPoint(w, headH/2, name="e", normal=[1, 0]);
+  path.ConnectionPoint(w/2, h, name="s", normal=[0, 1]);
+  path.ConnectionPoint(0, headH/2, name="w", normal=[-1, 0]);
 }
